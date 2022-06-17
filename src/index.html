@@ -10,78 +10,47 @@
 </head>
 <body>
  
-    <section
-      class="h-1/2 text-white dark:from-slate-800 dark:to-slate-900 relative overflow-hidden"
-    >
-        <nav class="w-full top-0 text-white">
-            <div class="container mx-auto py-5 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <img class="w-8" src="" alt="" />
-                <span class="text-2xl font-bold"
-                >Kweli</span
-                >
-            </div>
-            <ul
-                class="hidden md:flex space-x-10 dark:text-gray-100 font-bold text-sm uppercase"
-            >
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Solutions</a>
-                </li>
-                <li>
-                    <a href="#">Gallery</a>
-                </li>
-                <li>
-                    <a href="#">News</a>
-                </li>
-                <li>
-                    <a href="#">Contact us</a>
-                </li>
-                <li>
-                    <a href="#">Amaka Fund</a>
-                </li>
-                <li>
-                    <a href=""></a>
-                    <a href="#">Kweli Group</a>
-                </li>
-            </ul>
-        
-            <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
-                <div class="w-6 h-0.5 bg-black"></div>
-                <div class="w-6 h-0.5 bg-black"></div>
-                <div class="w-6 h-0.5 bg-black"></div>
-            </div>
-            <ul
-                id="menu"
-                class="hidden absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
-            >
-                <li>
-                <a href="#">About</a>
-                </li>
-                <li>
-                <a href="#about">Solutions</a>
-                </li>
-                <li>
-                <a href="#services">Contact us</a>
-                </li>
-                <li>
-                <a href="#works">Amaka Fund</a>
-                </li>
-                <li>
-                <a href="#contact">Kweli Group</a>
-                </li>
-            </ul>
-            </div>
-        </nav>
-        
-        <img
-        class="w-full h-96  object-cover"
-        src="./static/images/images/banner.png"
-        alt=""
-        />
+  <section>
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center ">
+          <span class="text-2xl font-[Poppins] cursor-pointer">
+            <img class="h-10 inline"
+              src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg">
+            tailwind
+          </span>
+    
+          <div class="cursor-pointer ...">
+            <span class="text-3xl mx-2 md:hidden block">
+              <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+          </div>
+        </div>
+    
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">SERVICE</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">BLOG'S</a>
+          </li>
+    
+          <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
+            Get started
+          </button>
+          <h2 class=""></h2>
+        </ul>
+      </nav>
     </section>
+
     <section class="md:h-full flex  text-black">
         <div class="container px-5 py-24 mx-auto">
             <div class="pl-24 mb-16 text-gray-700">
@@ -226,88 +195,95 @@
     </section>
 
 
-    <footer class="border-t border-card mt-10 h-screen-mid w-screen px-6 flex flex-col justify-center sm:px-24">
-      <div class="container sm:grid grid-cols-5 gap-10 mt-10">
-          <div class="w-100 mx-auto md:mx-0 text-left col-span-3 sm:px-10">
-              <a href="#">
-                  <img class="rounded-full bg-black w-32 h-32 mb-5" src="./static/images/images/footer_logo.png" alt="Logo Footer">
-              </a>
-              <p class="mt-2 text-2xl text-gray-500">
-                  Inspired by power of data as a point of connection, we not only connect people, businesses,and industries, we inspire informed strategic decisions that power the future.
+    <section>
+      <footer class="border-t border-card mt-10 h-screen-mid w-screen px-6 flex flex-col justify-center sm:px-24">
+        <div class="container sm:grid grid-cols-5 gap-10 mt-10">
+            <div class="w-100 mx-auto md:mx-0 text-left col-span-3 sm:px-10">
+                <a href="#">
+                    <img class="rounded-full bg-black w-32 h-32 mb-5" src="./static/images/images/footer_logo.png" alt="Logo Footer">
+                </a>
+                <p class="mt-2 text-2xl text-gray-500">
+                    Inspired by power of data as a point of connection, we not only connect people, businesses,and industries, we inspire informed strategic decisions that power the future.
+                </p>
+            </div>
+            <div class="flex justify-center pt-6 col-span-2">
+    
+                <div class="w-full">
+                    <h2 class="text-2xl text-gray-400 font-bold mb-4">COMPANY</h2>
+                    <nav class="list-none  text-xl text-black">
+                        <ul>
+                            <li class="mb-4">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#">Solutions</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#">Amaka Fund</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#">Gallery</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#">News</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="px-6">
+                    <h2 class="text-2xl text-gray-400 font-bold mb-4">COUNTRIES</h2>
+                    <nav class="list-none text-xl mb-5 flex flex-col justify-between">
+                        <div>
+                            <li class="mb-4">
+                                <a href="">Kenya</a>
+                            </li>
+                            <li>
+                                <a href="">Uganda</a>
+                            </li>
+                        </div>
+                        <div class="pt-24">
+                                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 sm:justify-start scale-90 justify-between space-x-2">
+                                    <a class="bg-card bg-gray-200 rounded-full p-1" href="">
+                                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            class="w-10 h-10" viewBox="0 0 24 24">
+                                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                        </svg>
+                                    </a>
+                                    <a class="bg-card bg-gray-200 rounded-full p-1" href="">
+                                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                          </svg>
+                                    </a>
+                                    <a class="bg-card bg-gray-200  rounded-full p-1" href="">
+                                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            class="w-10 h-10" viewBox="0 0 24 24">
+                                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                        </svg>
+                                    </a>
+                                    <a class="bg-card bg-gray-200  rounded-full p-1" href="">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                          </svg>
+                                    </a>
+                                </span>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+      </footer>
+      <div class="bg-black">
+          <div class="container mx-auto py-10 px-5 flex flex-wrap flex-col sm:flex-row text-center">
+              <p class="text-card text-xl text-gray-500">
+                  ©Copyright KWELI CAPITAL. All Rights Reserved.
               </p>
           </div>
-          <div class="flex justify-center pt-6 col-span-2">
-  
-              <div class="w-full">
-                  <h2 class="text-2xl text-gray-400 font-bold mb-4">COMPANY</h2>
-                  <nav class="list-none  text-xl text-black">
-                      <ul>
-                          <li class="mb-4">
-                              <a href="#">About</a>
-                          </li>
-                          <li class="mb-4">
-                              <a href="#">Solutions</a>
-                          </li>
-                          <li class="mb-4">
-                              <a href="#">Amaka Fund</a>
-                          </li>
-                          <li class="mb-4">
-                              <a href="#">Gallery</a>
-                          </li>
-                          <li class="mb-4">
-                              <a href="#">News</a>
-                          </li>
-                          <li class="mb-4">
-                              <a href="#">Contact us</a>
-                          </li>
-                      </ul>
-                  </nav>
-              </div>
-              <div class="px-6">
-                  <h2 class="text-2xl text-gray-400 font-bold mb-4">COUNTRIES</h2>
-                  <nav class="list-none text-xl mb-5 flex flex-col justify-between">
-                      <div>
-                          <li class="mb-4">
-                              <a href="">Kenya</a>
-                          </li>
-                          <li>
-                              <a href="">Uganda</a>
-                          </li>
-                      </div>
-                      <div class="pt-24">
-                              <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 sm:justify-start scale-90 justify-between space-x-2">
-                                  <a class="bg-card bg-gray-200 rounded-full p-1" href="">
-                                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          class="w-10 h-10" viewBox="0 0 24 24">
-                                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                      </svg>
-                                  </a>
-                                  <a class="bg-card bg-gray-200 rounded-full p-1" href="">
-                                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
-                                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                                        </svg>
-                                  </a>
-                                  <a class="bg-card bg-gray-200  rounded-full p-1" href="">
-                                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          class="w-10 h-10" viewBox="0 0 24 24">
-                                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                      </svg>
-                                  </a>
-                                  <a class="bg-card bg-gray-200  rounded-full p-1" href="">
-                                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
-                                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                                          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                                        </svg>
-                                  </a>
-                              </span>
-                      </div>
-                  </nav>
-              </div>
-          </div>
       </div>
-  </footer>
-
-      
+    </section>
     
 </body>
 </html>
